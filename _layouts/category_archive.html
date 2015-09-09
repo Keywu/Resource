@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<!--<div class="category-archive">
+  <div>
+    <span class="title">Category archive for {{ page.category }}</span>
+  </div>
+  <div>
+    <ul>
+{{ content }}
+    </ul>
+  </div>
+</div>
+-->
+
+<section class="post" id="section:articles">
+
+    <h3 class="heading">{{ page.category }}</h3>
+
+       <ul class="list-ui  post__list  mb">
+            {% for post in page.posts %}
+            <li class="list-ui__item">
+                 <time class="post__date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%d %B, %Y" }}</time>
+                 <h3 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            </li>
+            {% endfor %}
+       </ul>
+
+</section>

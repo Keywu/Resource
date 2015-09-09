@@ -1,0 +1,32 @@
+		<div class="[ box  box--highlight ]  mb" style="background-color:#f2f2f2">
+        	<p style="color:#444">傲娇的痴汉，深度的病娇，中二的少年（或许已经不再少了），这就是我！除了这些，
+我还是一名IOS developer！在这里我将记录我学习到的点点滴滴，学习路上，与君共勉！！！</p>
+
+			<p><a href="#" class="twitter-follow-button" data-show-count="true" data-lang="en">org.objc.yandere@gmail.com</a></p>
+
+			<hr />
+
+			<h4>分类</h4>
+
+			<ul class="[ list-ui  list-ui--small ]  mb">
+            	{% for cat in site.categories %}
+    				<li><a href="{{ site.baseurl }}/{{ cat[0] }}">{{ cat[0] }} ({{ cat | last | size}})</a></li>
+                {% endfor %}
+			</ul>
+
+			<h4>事件</h4>
+
+			<ul class="list-ui  list-ui--small">
+
+    			<li>
+        			<h3 class="list-ui__title">Talk</h3>
+        			 <p style="color:#444">上个周末，团队去了清远旅游，玩得灰常开森！！August，2015</p>
+    			</li>
+
+			</ul>
+
+        </div>
+
+        <!--<div class="[ box  box--highlight ]  mb">
+            <div class="adpacks"></div>
+        </div>-->

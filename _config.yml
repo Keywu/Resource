@@ -1,0 +1,14 @@
+pygments: true
+baseurl: ""
+paginate: 8
+safe: false
+highlighter: pygments
+excerpt_separator: ""
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - fenced_code_blocks
+    - no_intra_emphasis
+    - strikethrough
+    - autolink
+    - tables
